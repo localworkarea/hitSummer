@@ -408,19 +408,6 @@ body {
   transition: transform .65s ease;
   transition: transform .65s ease,-webkit-transform .65s ease
 }
-.social {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center
-}
-.social__link {
-  display: grid;
-  place-items: center;
-  height: auto;
-  aspect-ratio: 1/1;
-  background-color: #2d7e4a;
-  transition: background-color .3s ease
-}
 @media (min-width:30.06125em) {
   .video-youtube__body iframe {
     border: 1.25rem solid #2d7e4a
@@ -435,14 +422,6 @@ body {
   }
   .video-youtube__body {
     margin-bottom: 3.125rem
-  }
-  .social {
-    -webkit-column-gap: 3rem;
-    -moz-column-gap: 3rem;
-    column-gap: 3rem
-  }
-  .social__link {
-    width: 5.3125rem
   }
 }
 @media (min-width:90.06125em) {
@@ -616,9 +595,6 @@ body {
   .video-youtube__button::before {
     height: 5rem
   }
-  .social__link {
-    width: 4.0625rem
-  }
 }
 @media (max-width:23.49875em) {
   .scroll {
@@ -629,11 +605,6 @@ body {
   }
   .sec-first__pack-02 {
     width: 17.5rem!important
-  }
-  .social {
-    -webkit-column-gap: 1.875rem;
-    -moz-column-gap: 1.875rem;
-    column-gap: 1.875rem
   }
 }
 @media (min-width:20em) and (max-width:120em) {
@@ -769,16 +740,6 @@ body {
       height: calc(5rem + .625 * (100vw - 30.06125rem)/ 55.375)
     }
   }
-  @supports (width:clamp(4.0625rem ,3.3839164786rem + 2.2573363431vw ,5.3125rem)) {
-    .social__link {
-      width: clamp(4.0625rem ,3.3839164786rem + 2.2573363431vw ,5.3125rem)
-    }
-  }
-  @supports not (width:clamp(4.0625rem ,3.3839164786rem + 2.2573363431vw ,5.3125rem)) {
-    .social__link {
-      width: calc(4.0625rem + 1.25 * (100vw - 30.06125rem)/ 55.375)
-    }
-  }
 }
 @media (min-width:85.43625em) and (max-width:120em) {
   @supports (max-width:clamp(36.25rem ,-2.3725859824rem + 45.206321652vw ,51.875rem)) {
@@ -904,22 +865,6 @@ body {
     }
   }
 }
-@media (min-width:23.49875em) and (max-width:85.43625em) {
-  @supports ((-moz-column-gap:clamp(1.875rem ,1.4481811302rem + 1.8163471241vw ,3rem)) or (column-gap:clamp(1.875rem ,1.4481811302rem + 1.8163471241vw ,3rem))) {
-    .social {
-      -webkit-column-gap: clamp(1.875rem ,1.4481811302rem + 1.8163471241vw ,3rem);
-      -moz-column-gap: clamp(1.875rem ,1.4481811302rem + 1.8163471241vw ,3rem);
-      column-gap: clamp(1.875rem ,1.4481811302rem + 1.8163471241vw ,3rem)
-    }
-  }
-  @supports not ((-moz-column-gap:clamp(1.875rem ,1.4481811302rem + 1.8163471241vw ,3rem)) or (column-gap:clamp(1.875rem ,1.4481811302rem + 1.8163471241vw ,3rem))) {
-    .social {
-      -webkit-column-gap: calc(1.875rem + 1.125 * (100vw - 23.49875rem)/ 61.9375);
-      -moz-column-gap: calc(1.875rem + 1.125 * (100vw - 23.49875rem)/ 61.9375);
-      column-gap: calc(1.875rem + 1.125 * (100vw - 23.49875rem)/ 61.9375)
-    }
-  }
-}
 @media (any-hover:hover) {
   .scroll__icon:hover .scroll__scroll {
     -webkit-animation-play-state: paused;
@@ -928,8 +873,5 @@ body {
   .video-youtube__button:hover::before {
     -webkit-transform: translate(-50%,-50%) scale(1.1);
     transform: translate(-50%,-50%) scale(1.1)
-  }
-  .social__link:hover {
-    background-color: #6bdcfc
   }
 }

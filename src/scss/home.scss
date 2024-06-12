@@ -239,27 +239,3 @@
   }
 }
 
-.social {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  @include adaptiveValue("column-gap", 48, 30,0,1366.98,375.98);
-  // .social__item
-  &__item {
-  }
-  // .social__link
-  &__link {
-    display: grid;
-    place-items: center;
-    @include adaptiveValue("width", 85, 65,0,1366.98,480.98);
-    height: auto;
-    aspect-ratio: 1/1;
-    background-color:#2D7E4A;
-    transition: background-color .3s ease;
-    @media (any-hover: hover){
-      &:hover{
-        background-color: #6BDCFC;
-      }
-    }
-  }
-}
