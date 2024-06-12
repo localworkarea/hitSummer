@@ -24,6 +24,12 @@
 	}
 	// .sec-first__title
 	&__title {
+    opacity: 0;
+    transition: opacity .45s ease;
+    .loaded & {
+      opacity: 1;
+      transition-delay: .2s;
+    }
     text-align: center;
     @include adaptiveValue("font-size", 50, 35,2,1920,1366.98);
     @include adaptiveValue("font-size", 35, 25,3,1366.98,480.98);
